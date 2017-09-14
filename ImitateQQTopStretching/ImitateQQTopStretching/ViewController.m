@@ -23,6 +23,8 @@
 
 static const CGFloat backGroupHeight = 264;
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.edgesForExtendedLayout = UIRectEdgeNone;
@@ -68,7 +70,7 @@ static const CGFloat backGroupHeight = 264;
     
     static NSString * const CellIdentifier  = @"QQTopStretchingCell";
     QQTopStretchingCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    cell.textLabel.text = [NSString stringWithFormat:@"测试%ld",(long)indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"数据%ld",(long)indexPath.row];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
